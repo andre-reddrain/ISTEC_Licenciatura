@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="background-color: pink;">
+    <div id="container">
+      <h1 class="titulo">About</h1>
+      <hr />
+
+      <!-- Menu de Navegação -->
+      <ul id="menu">
+        <li>
+          <a
+            href="https://www.w3schools.com/html/html_elements.asp"
+            target="_blank"
+            >W3Schools</a
+          >
+        </li>
+        <li><a href="alfa.html">Alfa</a></li>
+        <li><a href="beta.html">Beta</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <p class="texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus praesentium impedit quod nostrum maxime consectetur aliquam voluptas soluta, sit vel deserunt incidunt ab odit nesciunt? At itaque facere similique et.
+      </p>
+
+      <h3>Ferramentas / linguagens utilizadas</h3>
+      <ul class="lista-ferramentas">
+        <li>Visual Studio Code</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+
+      <h3>Formulário de Contacto</h3>
+      <form class="formulario" action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required />
+
+        <label for="tema">Tema favorito:</label>
+        <select id="tema" name="tema">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JavaScript</option>
+          <option value="php">PHP</option>
+          <option value="mysql">MySQL</option>
+        </select>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreve aqui a tua dúvida..."></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
+  </body>
+</html>

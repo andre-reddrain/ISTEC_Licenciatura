@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* background-image: url(images/azulejo.png);
+    background-repeat: repeat; */
+    background-image: url(images/bird.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#container {
+    display: block;
+    width: 80%;
+    background-color: rgba(255, 192, 203, 0.529);
+    border-radius: 12px;
+    border: 2px black solid;
+    margin: 20px auto;
+    padding: 22px;
+    box-shadow: 12px 12px 22px gray;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 4em;
+    color: orangered;
+    text-shadow: 5px 5px 5px green;
+    -webkit-text-stroke: 1px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+img.pic {
+    width: 250px;
+    height: 250px;
+    display: block;
+    border-radius: 12px;
+    border: 2px groove darkmagenta;
+    margin: 20px auto;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: row;
+    margin: auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu a {
+    font-size: 24px;
+    color: blue;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: red;
+    text-shadow: 3px 3px 3px orange;
+}
+
+p.texto {
+    display: block;
+    margin: 34px auto;
+    padding: 12px;
+    background-color: white;
+    text-align: justify;
+    line-height: 1.9em;
+}
+
+p.texto span {
+    color: green;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+p.texto span.txt {
+    color: red;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    padding: 33px;
+    row-gap: 33px;
+    margin: 12px auto;
+    /* align-items: center; */
+    background-color: azure;
+    width: 50%;
+}
+
+table {
+    display: block;
+    margin: 12px auto;
+    background-color: white;
+    border-radius: 12px;
+    width: fit-content;
+    padding: 12px;
+    border: 2px solid black;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+th,td {
+    border: 1px black solid;
+    padding: 5px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: orange;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: yellow;
+}
+
+
+/* Not worky */
+tbody tr:last-child {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+thead tr {
+    background-color: red;
+}
+
+thead tr:first-child {
+    padding: 12px;
+    background-color: green;
+}
+
+thead tr:first-child th {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.media-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 16px auto;
+    width: 70%;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.media-box video,
+.media-box iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.media-box audio {
+    width: 100%;
+}
+
+.media-box figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333;
+}
+
+ul.lista-ferramentas {
+    background-color: azure;
+    width: 50%;
+    margin: 12px auto;
+    padding: 20px 40px;
+    border-radius: 12px;
+    border: 1px solid black;
+    line-height: 1.8em;
+}
+
+.faq-box {
+    background-color: white;
+    width: 60%;
+    margin: 16px auto;
+    padding: 14px;
+    border-radius: 12px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.faq-box summary {
+    font-weight: bold;
+    color: darkmagenta;
+}
+
+.faq-box p {
+    margin-top: 10px;
+    line-height: 1.6em;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    margin: 16px auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: darkmagenta;
+}
