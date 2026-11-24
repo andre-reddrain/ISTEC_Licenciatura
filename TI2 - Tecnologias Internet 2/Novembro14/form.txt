@@ -1,0 +1,27 @@
+   evt.preventDefault();
+                let str = `${name.value} <br/> idade:${age.value} <br> ${email.value}`;
+                str += `<br>Password: ${password.value}`;
+                const g = document.querySelector("input[name='gender']:checked")
+                str += `<br>Género ${g.value}`;
+
+                const p = document.querySelectorAll("input[name='languages']:checked");
+                const linguas = Array.from(p).map(c => c.value);
+                str += "<br>Línguas: " + linguas.join(" ");
+                const course = document.getElementById("course");
+                str += `<br> curso: ${course.value} ${course.selectedOptions[0].text}`
+
+                const d = document.getElementById("birthdate");
+                const data = new Date(d.value);
+                const dia = data.getUTCDate();
+                const mes = data.getUTCMonth() + 1;
+                const ano = data.getUTCFullYear();
+
+                str += `<br>Data: ${dia}/${mes}/${ano}`;
+
+                const r = document.getElementById("level");
+                str += `<br>Range:${r.value}`;
+                const aceite = document.querySelector("input[name='terms']");
+                const aceita = aceite.checked ? "aceita" : "Recusa";
+                str +=`<br>${aceita}`;
+
+                result.innerHTML = str;
